@@ -1,6 +1,9 @@
 use std::convert::TryInto;
 
-#[derive(Debug, PartialEq, PartialOrd)]
+use wasm_bindgen::prelude::wasm_bindgen;
+
+#[wasm_bindgen]
+#[derive(Debug, PartialEq, PartialOrd, Clone, Copy)]
 pub struct Position(i32);
 
 impl From<usize> for Position {

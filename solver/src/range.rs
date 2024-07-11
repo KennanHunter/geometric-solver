@@ -1,5 +1,6 @@
 use crate::{constraints::OverconstrainedError, position::Position};
 
+#[derive(Clone, Copy)]
 pub struct Range {
     pub min: Position,
     pub max: Position,
